@@ -20,6 +20,7 @@ source.
 
 The [source code and project page][projectsource] are hosted on [GitHub][github]. 
 
+[projecthome]: http://barberboy.github.com/css-terminal
 [vipa]: http://www.vipasolutions.com
 [cs]: http://jashkenas.github.com/coffee-script/
 [closure]: http://code.google.com/closure/compiler/docs/gettingstarted_app.html
