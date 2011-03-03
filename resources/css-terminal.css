@@ -1,0 +1,28 @@
+#css-terminal {
+  background: transparent url(css-terminal.png) no-repeat;
+  font-family: monospace;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: transparent;
+  z-index: 10000;
+  border: 0;
+  padding: 16px 0 0 0;
+  width: 16px;
+  height: 16px;
+  max-height: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#css-terminal:focus {
+  background-color: rgba(0, 0, 0, .75);
+  background-image: none;
+  border: 2px solid rgba(0, 0, 0, .1);
+  color: white;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  max-height: none;
+  overflow: auto;
+  cursor: text;
+}
