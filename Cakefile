@@ -1,6 +1,8 @@
 fs     = require 'fs'
 {exec} = require 'child_process'
 
+source = 'css-terminal'
+
 pass_through = (err, stdout, stderr) ->
   throw err if err
   out = stdout + stderr
@@ -14,28 +16,29 @@ task 'build', 'Compile the project\'s .coffee files to .js', ->
   console.log 'Compiling .coffee sources into .js...'
   exec 'coffee --compile --lint --output lib/ src/', pass_w_message '...compilation complete.'
 
-task 'minify', 'Minify the resulting application file after build.', ->
+task 'min', 'Minify the resulting application file after build.', ->
   console.log 'Minifying .js files...'
-  exec 'java -jar /usr/local/lib/closure-compiler/compiler.jar --js lib/css-terminal.js --js_output_file lib/css-terminal-min.js', pass_w_message '...minification complete.'
+  exec "java -jar /usr/local/lib/closure-compiler/compiler.jar --js lib/#{source}.js --js_output_file lib/#{source}-min.js", pass_w_message '...minification complete.'
 
-task 'document', 'Generate source documentation.', ->
+task 'doc', 'Generate source documentation.', ->
   console.log 'Generating documentation...'
-  exec 'rm -r docs/* && docco src/*.coffee', pass_w_message '...documentation complete.'
+  exec([
+    "rm -r docs/*"
+    "docco src/#{source}.coffee"
+    "sed 's/docco.css/docs\\/docco.css/' < docs/#{source}.html > index.html"
+    ].join(' && '), pass_w_message '...documentation complete.'
+  )
 
 task 'build:full', 'Build and minify the .js and generate documentation', ->
-  exec 'cake build', (err, stdout, stderr) ->
-    pass_through err, stdout, stderr
-    exec 'cake minify', (err, stdout, stderr) ->
-      pass_through err, stdout, stderr
-      exec 'cake document', pass_w_message 'Full build complete.'
+  exec 'cake build && cake min && cake doc', pass_w_message 'Full build complete.'
 
-task 'build:watch', 'Perform an initial build and rebuild whenever the source files change.', ->
+task 'watch', 'Perform an initial build and rebuild whenever the source files change.', ->
   exec 'cake build:full', (err, stdout, stderr) ->
     throw err if err
     out = stdout + stderr
     console.log out if out?
     console.log 'Watching for changes...'
-    fs.watchFile 'src/css-terminal.coffee', {persistent: true, interval: 500}, (curr, prev) ->
+    fs.watchFile "src/#{source}.coffee", {persistent: true, interval: 500}, (curr, prev) ->
       return if curr.size is prev.size and curr.mtime.getTime() is prev.mtime.getTime()
       exec 'cake build:full', pass_through
 
