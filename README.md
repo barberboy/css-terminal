@@ -1,8 +1,16 @@
-## CSS Terminal
+      _/_/_/  _/_/_/   _/_/_/    _/_/_/_/_/  _/_/_/  _/_/_/    _/      _/  _/_/_/  _/      _/    _/_/    _/      
+    _/       _/       _/             _/      _/      _/    _/  _/_/  _/_/    _/    _/_/    _/  _/    _/  _/      
+    _/        _/_/     _/_/          _/      _/_/    _/_/_/    _/  _/  _/    _/    _/  _/  _/  _/_/_/_/  _/      
+    _/            _/       _/        _/      _/      _/    _/  _/      _/    _/    _/    _/_/  _/    _/  _/      
+     _/_/_/  _/_/_/   _/_/_/         _/      _/_/_/  _/    _/  _/      _/  _/_/_/  _/      _/  _/    _/  _/_/_/_/
+
+#### Description
 
 [CSS Terminal][projecthome] is a bookmarklet that allows you to inject CSS rules directly
 into a live web page. It's handy for rapid CSS development, prototyping 
 and debugging.
+
+#### Homepage
 
 You can read about it, see it in action and install it at the 
 [project home page][projecthome].
@@ -11,7 +19,7 @@ You can read about it, see it in action and install it at the
 
 The CSS Terminal bookmarklet was written by Ben Barber while working at
 [i2rd / Vipa Solutions][vipa]. The code was generously donated to the 
-community under the <a href="#license">MIT license</a>.
+community under the MIT license.
 
 The terminal source is written in [CoffeeScript][cs] and resulting 
 JavaScript is minified using [Google's Closure Compiler][closure]. 
