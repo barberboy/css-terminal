@@ -23,7 +23,7 @@ task 'min', 'Minify the resulting application file after build.', ->
 task 'doc', 'Generate source documentation.', ->
   console.log 'Generating documentation...'
   exec([
-    "rm -r docs/*"
+    "rm -rf docs"
     "docco src/#{source}.coffee"
     "sed 's/docco.css/docs\\/docco.css/' < docs/#{source}.html > index.html"
     ].join(' && '), pass_w_message '...documentation complete.'
