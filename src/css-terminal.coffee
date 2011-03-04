@@ -4,30 +4,28 @@
 # into a live web page. It's handy for rapid CSS development, prototyping 
 # and debugging.
 # 
-# You can [see the CSS Terminal in action](javascript:\(function\(\){var d=document,ct=d.getElementById\('css-terminal'\);if\(ct\){ct.focus\(\);return;}var s=d.createElement\('script'\);s.src='../lib/css-terminal-min.js';d.body.appendChild\(s\)}\)\(\)) 
+# You can <a href="javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='http://barberboy.github.com/css-terminal/lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">see the CSS Terminal in action</a>
 # on this page or <a href="#install">install the bookmarklet</a> on your 
 # favorite browser and use it on any page.
 #
-# The [CSS Terminal source][projectsource] is hosted on GitHub. Feel free to
-# browse the source, fork and customize at will. The repository can be cloned
-# at:
+# The [source for CSS Terminal][projectsource] is hosted on GitHub. Feel free
+# to browse, fork and customize at will. The repository can be cloned at:
 #
-#     git://github.com/barberboy/css-terminal
+#     git://github.com/barberboy/css-terminal.git
 #
 # [projecthome]: http://barberboy.github.com/css-terminal
 # [projectsource]: http://github.com/barberboy/css-terminal
 
-
 #### <a id="install" href="#install">Installation</a>
 #
-# You can install the bookmarklet in your browser by dragging the following 
-# link to your browser's bookmarks bar: <a href="javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='../lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>.
+# The CSS Terminal bookmarklet can be installed in your browser by dragging the 
+# following link to your browser's bookmarks bar: <a href="javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='http://barberboy.github.com/css-terminal/lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>.
 #
 # If you don't know how to use bookmarklets in your browser,
 # [Google is your friend][howtouse].
 #
 # You can also [install the bookmarklet on your mobile device of choice][howtomobile]
-# by using the following link: <a href="#javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='../lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>. 
+# by using the following link: <a href="#javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='http://barberboy.github.com/css-terminal/lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>. 
 #
 # Disclaimer: the bookmarklet is not optimized for the mobile devices. Let
 # me know if you have any suggestions.
@@ -41,7 +39,7 @@
 # the link in your browser's toolbar to activate the terminal.
 #
 # When the terminal is active, you can enter CSS rules in the terminal and
-# they will get applied to the page. Rules will get automatically added
+# they will get applied to the page. Rules are automatically applied
 # when you enter a semicolon or hit the Enter key. You can also hit 
 # Ctrl+Enter (or Command+Enter on Mac) to apply the rule right away.
 #
@@ -83,7 +81,7 @@
 # The terminal source is written in [CoffeeScript][cs] and resulting 
 # JavaScript is minified using [Google's Closure Compiler][closure]. 
 # [Docco][docco] is used to generate the documentation (this page) from the 
-# CoffeeScript source.
+# .coffee source.
 #
 # [vipa]: http://www.vipasolutions.com
 # [cs]: http://jashkenas.github.com/coffee-script/
@@ -127,7 +125,7 @@ previousStyles = cookieValue()
 
 # Include the default styles for the CSS Terminal.
 head.appendChild newElement 'link', 
-  href : '../resources/css-terminal.css'
+  href : 'http://barberboy.github.com/css-terminal/resources/css-terminal.css'
   rel : 'stylesheet'
 
 # Create and append a textarea to the document which will be used to add
@@ -165,6 +163,7 @@ terminal.addEventListener 'keydown', (ev) ->
 # Add some inline positioning to prevent browsers from focusing the bottom of
 # the document when the terminal is focused.
 terminal.style.position = 'fixed'
+terminal.style.top = '0'
 
 # Finally, focus the terminal which will make it visible and allow the user to 
 # add rules.
@@ -173,7 +172,7 @@ terminal.focus()
 #### <a id="license" href="#license">License</a>
 #
 # Copyright (C) 2010-2011 by Interactive Information Research and Development
-#  (i2rd)
+# (i2rd)
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -191,4 +190,4 @@ terminal.focus()
 # AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-# THE SOFTWARE.    
+# THE SOFTWARE.
