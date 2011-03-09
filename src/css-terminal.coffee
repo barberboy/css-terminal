@@ -74,15 +74,16 @@
 
 #### <a id="about" href="#about">About</a>
 #
-# The CSS Terminal bookmarklet was written by Ben Barber while working at
-# [i2rd / Vipa Solutions][vipa]. The code was generously donated to the 
-# community under the <a href="#license">MIT license</a>.
+# The CSS Terminal bookmarklet was written by [Ben Barber][userpage] while
+# working at [i2rd / Vipa Solutions][vipa]. The code was generously donated 
+# to the community under the <a href="#license">MIT license</a>.
 #
 # The terminal source is written in [CoffeeScript][cs] and resulting 
 # JavaScript is minified using [Google's Closure Compiler][closure]. 
 # [Docco][docco] is used to generate the documentation (this page) from the 
 # .coffee source.
 #
+# [userpage]: http://github.com/barberboy
 # [vipa]: http://www.vipasolutions.com
 # [cs]: http://jashkenas.github.com/coffee-script/
 # [closure]: http://code.google.com/closure/compiler/docs/gettingstarted_app.html
