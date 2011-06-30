@@ -1,27 +1,28 @@
 <!DOCTYPE html>  <html> <head>   <title>css-terminal.coffee</title>   <meta http-equiv="content-type" content="text/html; charset=UTF-8">   <link rel="stylesheet" media="all" href="docco.css" /> </head> <body>   <div id="container">     <div id="background"></div>          <table cellpadding="0" cellspacing="0">       <thead>         <tr>           <th class="docs">             <h1>               css-terminal.coffee             </h1>           </th>           <th class="code">           </th>         </tr>       </thead>       <tbody>                               <tr id="section-1">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-1">&#182;</a>               </div>               <h1>CSS Terminal</h1>
 
-<p><a href="http://barberboy.github.com/css-terminal">CSS Terminal</a> is a bookmarklet that allows you to inject CSS rules directly
+<p><a href="javascript:(function(){var d=document,ct=d.getElementById('css-terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='../lib/css-terminal-min.js';d.body.appendChild(s)})()">CSS Terminal</a> is a bookmarklet that allows you to inject CSS rules directly
 into a live web page. It's handy for rapid CSS development, prototyping 
 and debugging.</p>
 
-<p>You can <a href="javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='http://barberboy.github.com/css-terminal/lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">see the CSS Terminal in action</a>
+<p>You can <a href="javascript:(function(){var d=document,ct=d.getElementById('css-terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='../lib/css-terminal-min.js';d.body.appendChild(s)})()">see the CSS Terminal in action</a> 
 on this page or <a href="#install">install the bookmarklet</a> on your 
 favorite browser and use it on any page.</p>
 
-<p>The <a href="http://github.com/barberboy/css-terminal">source for CSS Terminal</a> is hosted on GitHub. Feel free
-to browse, fork and customize at will. The repository can be cloned at:</p>
+<p>The <a href="http://github.com/barberboy/css-terminal">CSS Terminal source</a> is hosted on GitHub. Feel free to
+browse the source, fork and customize at will. The repository can be cloned
+at:</p>
 
-<pre><code>git://github.com/barberboy/css-terminal.git
+<pre><code>git://github.com/barberboy/css-terminal
 </code></pre>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-2">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-2">&#182;</a>               </div>               <h3><a id="install" href="#install">Installation</a></h3>
 
-<p>The CSS Terminal bookmarklet can be installed in your browser by dragging the 
-following link to your browser's bookmarks bar: <a href="javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='http://barberboy.github.com/css-terminal/lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>.</p>
+<p>You can install the bookmarklet in your browser by dragging the following 
+link to your browser's bookmarks bar: <a href="javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='../lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>.</p>
 
 <p>If you don't know how to use bookmarklets in your browser,
 <a href="http://www.google.com/search?q=how+to+use+bookmarklets">Google is your friend</a>.</p>
 
 <p>You can also <a href="http://stevesouders.com/mobileperf/iphonesteps.php">install the bookmarklet on your mobile device of choice</a>
-by using the following link: <a href="#javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='http://barberboy.github.com/css-terminal/lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>. </p>
+by using the following link: <a href="#javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='../lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>. </p>
 
 <p>Disclaimer: the bookmarklet is not optimized for the mobile devices. Let
 me know if you have any suggestions.</p>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-3">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-3">&#182;</a>               </div>               <h3><a id="howtouse" href="#howtouse">How to Use</a></h3>
@@ -30,7 +31,7 @@ me know if you have any suggestions.</p>             </td>             <td class
 the link in your browser's toolbar to activate the terminal.</p>
 
 <p>When the terminal is active, you can enter CSS rules in the terminal and
-they will get applied to the page. Rules are automatically applied
+they will get applied to the page. Rules will get automatically added
 when you enter a semicolon or hit the Enter key. You can also hit 
 Ctrl+Enter (or Command+Enter on Mac) to apply the rule right away.</p>
 
@@ -68,7 +69,7 @@ to the community under the <a href="#license">MIT license</a>.</p>
 <p>The terminal source is written in <a href="http://jashkenas.github.com/coffee-script/">CoffeeScript</a> and resulting 
 JavaScript is minified using <a href="http://code.google.com/closure/compiler/docs/gettingstarted_app.html">Google's Closure Compiler</a>. 
 <a href="http://jashkenas.github.com/docco/">Docco</a> is used to generate the documentation (this page) from the 
-.coffee source.</p>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-6">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-6">&#182;</a>               </div>               <h3><a id="source" href="#source">Source Documentation</a></h3>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-7">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-7">&#182;</a>               </div>               <p>Launch the CSS Terminal and return if the css-terminal element is already
+CoffeeScript source.</p>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-6">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-6">&#182;</a>               </div>               <h3><a id="source" href="#source">Source Documentation</a></h3>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                               <tr id="section-7">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-7">&#182;</a>               </div>               <p>Launch the CSS Terminal and return if the css-terminal element is already
 in the document.</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nv">terminal = </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span> <span class="s1">&#39;css-terminal&#39;</span>
 <span class="k">if</span> <span class="nx">terminal</span>
   <span class="nx">terminal</span><span class="p">.</span><span class="nx">focus</span><span class="p">()</span>
@@ -84,7 +85,7 @@ if the cookie is not found.</p>             </td>             <td class="code"> 
   <span class="k">return</span> <span class="nx">el</span></pre></div>             </td>           </tr>                               <tr id="section-10">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-10">&#182;</a>               </div>               <p>Store some of the important key codes to make the keydown listeners
 more readable.</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nv">key = enter: </span><span class="mi">13</span><span class="p">,</span> <span class="nv">escape: </span><span class="mi">27</span><span class="p">,</span> <span class="nv">semicolon: </span><span class="mi">59</span></pre></div>             </td>           </tr>                               <tr id="section-11">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-11">&#182;</a>               </div>               <p>Cache the head and body tags which we'll use when we start adding elements.</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nv">head = </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;head&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 <span class="nv">body = </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span></pre></div>             </td>           </tr>                               <tr id="section-12">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-12">&#182;</a>               </div>               <p>Fetch the previous set of rules which we stored in a cookie.</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nv">previousStyles = </span><span class="nx">cookieValue</span><span class="p">()</span></pre></div>             </td>           </tr>                               <tr id="section-13">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-13">&#182;</a>               </div>               <p>Include the default styles for the CSS Terminal.</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">head</span><span class="p">.</span><span class="nx">appendChild</span> <span class="nx">newElement</span> <span class="s1">&#39;link&#39;</span><span class="p">,</span> 
-  <span class="nv">href : </span><span class="s1">&#39;http://barberboy.github.com/css-terminal/resources/css-terminal.css&#39;</span>
+  <span class="nv">href : </span><span class="s1">&#39;../resources/css-terminal.css&#39;</span>
   <span class="nv">rel : </span><span class="s1">&#39;stylesheet&#39;</span></pre></div>             </td>           </tr>                               <tr id="section-14">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-14">&#182;</a>               </div>               <p>Create and append a textarea to the document which will be used to add
 CSS rules. The initial value for the textarea will be the last value stored
 in a cookie.</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">body</span><span class="p">.</span><span class="nx">appendChild</span> <span class="nv">terminal = </span><span class="nx">newElement</span> <span class="s1">&#39;textarea&#39;</span>
@@ -100,7 +101,7 @@ so they will be persisted across page refreshes.</p>
 
 <p>We are also listening for the 'escape' key, and we'll close the terminal if 
 the user hits 'escape'.</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">terminal</span><span class="p">.</span><span class="nx">addEventListener</span> <span class="s1">&#39;keydown&#39;</span><span class="p">,</span> <span class="nf">(ev) -&gt;</span>
-  <span class="nx">ev</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>      
+  <span class="nx">ev</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">();</span>
   <span class="nv">pressed = </span><span class="nx">ev</span><span class="p">.</span><span class="nx">keyCode</span>
   <span class="nv">css = </span><span class="k">this</span><span class="p">.</span><span class="nx">value</span>
   <span class="nv">oneYearFromNow = </span><span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="o">+</span><span class="k">new</span> <span class="nb">Date</span><span class="p">()</span><span class="o">+</span><span class="mi">31536</span><span class="nx">E6</span><span class="p">).</span><span class="nx">toGMTString</span><span class="p">()</span>
@@ -109,12 +110,11 @@ the user hits 'escape'.</p>             </td>             <td class="code">     
     <span class="nb">document</span><span class="p">.</span><span class="nv">cookie = </span><span class="s2">&quot;css-terminal=#{escape css}; expires=#{oneYearFromNow}; path=/&quot;</span>
   <span class="nx">terminal</span><span class="p">.</span><span class="nx">blur</span><span class="p">()</span> <span class="k">if</span> <span class="nx">key</span><span class="p">.</span><span class="nx">escape</span> <span class="o">is</span> <span class="nx">pressed</span>
 <span class="p">,</span> <span class="kc">true</span></pre></div>             </td>           </tr>                               <tr id="section-17">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-17">&#182;</a>               </div>               <p>Add some inline positioning to prevent browsers from focusing the bottom of
-the document when the terminal is focused.</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nv">terminal.style.position = </span><span class="s1">&#39;fixed&#39;</span>
-<span class="nv">terminal.style.top = </span><span class="s1">&#39;0&#39;</span></pre></div>             </td>           </tr>                               <tr id="section-18">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-18">&#182;</a>               </div>               <p>Finally, focus the terminal which will make it visible and allow the user to 
+the document when the terminal is focused.</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nv">terminal.style.position = </span><span class="s1">&#39;fixed&#39;</span></pre></div>             </td>           </tr>                               <tr id="section-18">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-18">&#182;</a>               </div>               <p>Finally, focus the terminal which will make it visible and allow the user to 
 add rules.</p>             </td>             <td class="code">               <div class="highlight"><pre><span class="nx">terminal</span><span class="p">.</span><span class="nx">focus</span><span class="p">()</span></pre></div>             </td>           </tr>                               <tr id="section-19">             <td class="docs">               <div class="pilwrap">                 <a class="pilcrow" href="#section-19">&#182;</a>               </div>               <h3><a id="license" href="#license">License</a></h3>
 
 <p>Copyright (C) 2010-2011 by Interactive Information Research and Development
-(i2rd)</p>
+ (i2rd)</p>
 
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -132,4 +132,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.</p>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                </tbody>     </table>   </div> </body> </html> 
+THE SOFTWARE.    </p>             </td>             <td class="code">               <div class="highlight"><pre></pre></div>             </td>           </tr>                </tbody>     </table>   </div> </body> </html> 
