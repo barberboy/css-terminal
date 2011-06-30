@@ -1,10 +1,10 @@
 ## CSS Terminal
 #
-# [CSS Terminal](javascript:\(function\(\){var d=document,ct=d.getElementById\('css-terminal'\);if\(ct\){ct.focus\(\);return;}var s=d.createElement\('script'\);s.src='../lib/css-terminal-min.js';d.body.appendChild\(s\)}\)\(\)) is a bookmarklet that allows you to inject CSS rules directly
+# [CSS Terminal](javascript:\(function\(\){var d=document,ct=d.getElementById\('css-terminal'\);if\(ct\){ct.focus\(\);return;}var s=d.createElement\('script'\);s.src='lib/css-terminal-min.js';d.body.appendChild\(s\)}\)\(\)) is a bookmarklet that allows you to inject CSS rules directly
 # into a live web page. It's handy for rapid CSS development, prototyping 
 # and debugging.
 # 
-# You can [see the CSS Terminal in action](javascript:\(function\(\){var d=document,ct=d.getElementById\('css-terminal'\);if\(ct\){ct.focus\(\);return;}var s=d.createElement\('script'\);s.src='../lib/css-terminal-min.js';d.body.appendChild\(s\)}\)\(\)) 
+# You can [see the CSS Terminal in action](javascript:\(function\(\){var d=document,ct=d.getElementById\('css-terminal'\);if\(ct\){ct.focus\(\);return;}var s=d.createElement\('script'\);s.src='lib/css-terminal-min.js';d.body.appendChild\(s\)}\)\(\)) 
 # on this page or <a href="#install">install the bookmarklet</a> on your 
 # favorite browser and use it on any page.
 #
@@ -21,13 +21,13 @@
 #### <a id="install" href="#install">Installation</a>
 #
 # You can install the bookmarklet in your browser by dragging the following 
-# link to your browser's bookmarks bar: <a href="javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='../lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>.
+# link to your browser's bookmarks bar: <a href="javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>.
 #
 # If you don't know how to use bookmarklets in your browser,
 # [Google is your friend][howtouse].
 #
 # You can also [install the bookmarklet on your mobile device of choice][howtomobile]
-# by using the following link: <a href="#javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='../lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>. 
+# by using the following link: <a href="#javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>. 
 #
 # Disclaimer: the bookmarklet is not optimized for the mobile devices. Let
 # me know if you have any suggestions.
