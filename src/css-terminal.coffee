@@ -165,6 +165,7 @@ terminal.addEventListener 'keydown', (ev) ->
 # Add some inline positioning to prevent browsers from focusing the bottom of
 # the document when the terminal is focused.
 terminal.style.position = 'fixed'
+terminal.style.top = 0
 
 # Finally, focus the terminal which will make it visible and allow the user to 
 # add rules.
