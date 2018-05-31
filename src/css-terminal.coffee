@@ -127,7 +127,7 @@ previousStyles = cookieValue()
 
 # Include the default styles for the CSS Terminal.
 head.appendChild newElement 'link',
-  href : 'https://barberboy.github.com/css-terminal/resources/css-terminal.css'
+  href : 'https://raw.githubusercontent.com/solisoft/css-terminal/resources/css-terminal.css'
   rel : 'stylesheet'
 
 # Create and append a textarea to the document which will be used to add
