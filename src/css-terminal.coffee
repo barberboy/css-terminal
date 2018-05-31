@@ -1,11 +1,11 @@
 ## CSS Terminal
 #
 # [CSS Terminal](javascript:\(function\(\){var d=document,ct=d.getElementById\('css-terminal'\);if\(ct\){ct.focus\(\);return;}var s=d.createElement\('script'\);s.src='http://barberboy.github.com/css-terminal/lib/css-terminal-min.js';d.body.appendChild\(s\)}\)\(\)) is a bookmarklet that allows you to inject CSS rules directly
-# into a live web page. It's handy for rapid CSS development, prototyping 
+# into a live web page. It's handy for rapid CSS development, prototyping
 # and debugging.
-# 
-# You can [see the CSS Terminal in action](javascript:\(function\(\){var d=document,ct=d.getElementById\('css-terminal'\);if\(ct\){ct.focus\(\);return;}var s=d.createElement\('script'\);s.src='http://barberboy.github.com/css-terminal/lib/css-terminal-min.js';d.body.appendChild\(s\)}\)\(\)) 
-# on this page or <a href="#install">install the bookmarklet</a> on your 
+#
+# You can [see the CSS Terminal in action](javascript:\(function\(\){var d=document,ct=d.getElementById\('css-terminal'\);if\(ct\){ct.focus\(\);return;}var s=d.createElement\('script'\);s.src='http://barberboy.github.com/css-terminal/lib/css-terminal-min.js';d.body.appendChild\(s\)}\)\(\))
+# on this page or <a href="#install">install the bookmarklet</a> on your
 # favorite browser and use it on any page.
 #
 # The [CSS Terminal source][projectsource] is hosted on GitHub. Feel free to
@@ -20,14 +20,14 @@
 
 #### <a id="install" href="#install">Installation</a>
 #
-# You can install the bookmarklet in your browser by dragging the following 
+# You can install the bookmarklet in your browser by dragging the following
 # link to your browser's bookmarks bar: <a href="javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='http://barberboy.github.com/css-terminal/lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>.
 #
 # If you don't know how to use bookmarklets in your browser,
 # [Google is your friend][howtouse].
 #
 # You can also [install the bookmarklet on your mobile device of choice][howtomobile]
-# by using the following link: <a href="#javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='http://barberboy.github.com/css-terminal/lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>. 
+# by using the following link: <a href="#javascript:(function(){var d=document,ct=d.getElementById('css_terminal');if(ct){ct.focus();return;}var s=d.createElement('script');s.src='http://barberboy.github.com/css-terminal/lib/css-terminal-min.js';d.body.appendChild(s)})()" title="CSS Terminal">CSS Terminal</a>.
 #
 # Disclaimer: the bookmarklet is not optimized for mobile devices. Let
 # me know if you have any suggestions.
@@ -37,15 +37,15 @@
 
 #### <a id="howtouse" href="#howtouse">How to Use</a>
 #
-# Once you've installed the bookmarklet on your browser, you can click 
+# Once you've installed the bookmarklet on your browser, you can click
 # the link in your browser's toolbar to activate the terminal.
 #
 # When the terminal is active, you can enter CSS rules in the terminal and
 # they will get applied to the page. Rules will get automatically added
-# when you enter a semicolon or hit the Enter key. You can also hit 
+# when you enter a semicolon or hit the Enter key. You can also hit
 # Ctrl+Enter (or Command+Enter on Mac) to apply the rule right away.
 #
-# Pressing Escape or Tab will collapse the terminal, although your CSS 
+# Pressing Escape or Tab will collapse the terminal, although your CSS
 # rules will still be applied to the page. You can reactivate the
 # terminal by clicking the bookmark again or by clicking the CSS Terminal
 # icon at the top right of the page.
@@ -77,12 +77,12 @@
 #### <a id="about" href="#about">About</a>
 #
 # The CSS Terminal bookmarklet was written by [Ben Barber][userpage] while
-# working at [i2rd / Vipa Solutions][vipa]. The code was generously donated 
+# working at [i2rd / Vipa Solutions][vipa]. The code was generously donated
 # to the community under the <a href="#license">MIT license</a>.
 #
-# The terminal source is written in [CoffeeScript][cs] and resulting 
-# JavaScript is minified using [Google's Closure Compiler][closure]. 
-# [Docco][docco] is used to generate the documentation (this page) from the 
+# The terminal source is written in [CoffeeScript][cs] and resulting
+# JavaScript is minified using [Google's Closure Compiler][closure].
+# [Docco][docco] is used to generate the documentation (this page) from the
 # CoffeeScript source.
 #
 # [userpage]: http://github.com/barberboy
@@ -126,8 +126,8 @@ body = document.getElementsByTagName('body')[0]
 previousStyles = cookieValue()
 
 # Include the default styles for the CSS Terminal.
-head.appendChild newElement 'link', 
-  href : 'http://barberboy.github.com/css-terminal/resources/css-terminal.css'
+head.appendChild newElement 'link',
+  href : 'https://barberboy.github.com/css-terminal/resources/css-terminal.css'
   rel : 'stylesheet'
 
 # Create and append a textarea to the document which will be used to add
@@ -141,7 +141,7 @@ body.appendChild terminal = newElement 'textarea'
 
 # Create and append the style element to the page where we will add the
 # CSS rules from the CSS Terminal.
-body.appendChild output = newElement 'style', 
+body.appendChild output = newElement 'style',
   id : 'css-terminal-output'
   innerHTML : previousStyles
 
@@ -149,7 +149,7 @@ body.appendChild output = newElement 'style',
 # hits 'enter' or types a semicolon. The CSS rules are also stored in a cookie
 # so they will be persisted across page refreshes.
 #
-# We are also listening for the 'escape' key, and we'll close the terminal if 
+# We are also listening for the 'escape' key, and we'll close the terminal if
 # the user hits 'escape'.
 terminal.addEventListener 'keydown', (ev) ->
   ev.stopPropagation();
@@ -167,7 +167,7 @@ terminal.addEventListener 'keydown', (ev) ->
 terminal.style.position = 'fixed'
 terminal.style.top = 0
 
-# Finally, focus the terminal which will make it visible and allow the user to 
+# Finally, focus the terminal which will make it visible and allow the user to
 # add rules.
 terminal.focus()
 
@@ -182,7 +182,7 @@ terminal.focus()
 # to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
-# 
+#
 # The above copyright notice and this permission notice shall be included in
 # all copies or substantial portions of the Software.
 #
@@ -192,4 +192,4 @@ terminal.focus()
 # AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-# THE SOFTWARE.    
+# THE SOFTWARE.
