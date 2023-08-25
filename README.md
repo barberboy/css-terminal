@@ -7,8 +7,7 @@
 #### Description
 
 [CSS Terminal][projecthome] is a bookmarklet that allows you to inject CSS rules directly
-into a live web page. It's handy for rapid CSS development, prototyping 
-and debugging.
+into a live web page. It's handy for rapid CSS development, prototyping and debugging.
 
 #### Homepage
 
@@ -21,24 +20,16 @@ The CSS Terminal bookmarklet was written by Ben Barber while working at
 [i2rd / Vipa Solutions][vipa]. The code was generously donated to the 
 community under the MIT license.
 
-The terminal source is written in [CoffeeScript][cs] and resulting 
-JavaScript is minified using [Google's Closure Compiler][closure]. 
-[Docco][docco] is used to generate the documentation from the CoffeeScript
-source.
-
 The [source code and project page][projectsource] are hosted on [GitHub][github]. 
 
 [projecthome]: https://barberboy.github.io/css-terminal/
 [vipa]: http://www.vipasolutions.com
-[cs]: http://jashkenas.github.com/coffee-script/
-[closure]: http://code.google.com/closure/compiler/docs/gettingstarted_app.html
-[docco]: http://jashkenas.github.com/docco/
 [github]: http://github.com
 [projectsource]: https://github.com/barberboy/css-terminal
 
 #### License
 
-Copyright (C) 2010-2011 by Interactive Information Research and Development
+Copyright (C) 2010-2023 by Interactive Information Research and Development
 (i2rd)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
